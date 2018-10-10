@@ -52,10 +52,10 @@ view: fact_common {
 ;;
 
 # Unshared dimensions
-  dimension: device_id {}
-  dimension: zone_id {}
-  dimension: domain_id {}
-  dimension: campaign_id {}
+  dimension: device_id {hidden:yes}
+  dimension: zone_id {hidden:yes}
+  dimension: domain_id {hidden:yes}
+  dimension: campaign_id {hidden:yes}
 
   dimension: publisher_id {}
   measure: total_impressions {type:sum sql: ${TABLE}.impressions;;}
